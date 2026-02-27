@@ -171,8 +171,8 @@ async def get_account_info():
         return jsonify({"error": "Please provide UID."}), 400
     
     try:
-        # Always use ME region
-        region = "ME"
+        # Always use CIS region
+        region = "CIS"
         
         # Get account information
         return_data = await GetAccountInformation(uid, "7", region, "/GetPlayerPersonalShow")
